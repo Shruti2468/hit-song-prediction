@@ -20,3 +20,12 @@ OUTPUT_CSV = PROCESSED_DATA_DIR / "hit_songs_master.csv"
 # Hit Definition Parameters (Top 40 within first 12 weeks on chart)
 HIT_RANK_THRESHOLD = 40
 HIT_WEEKS_WINDOW = 12
+
+# Sprint 2: Modeling & Evaluation Paths
+MODELS_DIR = BASE_DIR / "models"
+MODELS_DIR.mkdir(parents=True, exist_ok=True)
+
+SPLIT_YEAR = 2020
+SPRINT2_RESULTS_CSV = PROCESSED_DATA_DIR / "sprint2_results.csv"
+FEATURE_IMPORTANCE_CSV = PROCESSED_DATA_DIR / "feature_importances.csv"
+BEST_MODEL_PATH = MODELS_DIR / "best_hit_model.joblib"
